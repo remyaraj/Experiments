@@ -4,13 +4,24 @@
 }
 
 .title {
-  background-color: #FF0000;
+  
   float : right;
   text-align: center;
   width: 200px;
   height: 30px;
   margin-bottom: 5px;
  
+}
+#t1 {
+  background-color: #FF0000;
+}
+
+#t2 {
+  background-color: #FF00FF;
+}
+
+#t3 {
+  background-color: #00FF00;
 }
 
 h1 {
