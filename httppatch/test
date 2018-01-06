@@ -1,0 +1,3 @@
+curl -X POST "http://localhost:9000/emp" -d '{"name":"Myntra","address":"shdjchzkjxh","state":"KR","department":"I"}' -H "Content-Type:application/json"
+curl -X PUT "http://localhost:9000/emp/2" -d '{"name":"Myntra","address":"shdjchzkjxh","state":"KR","department":"IS"}' -H "Content-Type:application/json"
+curl -X PATCH "http://localhost:9000/emp/2" -d '{"department":"ISR"}' -H "Content-Type:application/json"

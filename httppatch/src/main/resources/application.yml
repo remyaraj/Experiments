@@ -1,0 +1,37 @@
+# DataSource settings: set here your own configurations for the database 
+# connection. In this example we have "netgloo_blog" as database name and 
+# "root" as username and password.
+
+# Spring Config
+spring:
+  profiles:
+    active: dev
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+# DataSource settings: set here your own configurations for the database 
+# connection. In this example we have "netgloo_blog" as database name and 
+# "root" as username and password.
+
+logging:
+  level: 
+    ROOT: DEBUG,TRACE,INFO
+    com.smartd.backoffice: INFO
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /home/remya/Downloads/application.log
+    
+server:
+  port: 9000
+  tomcat:
+    accessLogEnabled: true
+
+
+endpoints:
+  enabled: false
+
+  trace:
+    sensitive: false
